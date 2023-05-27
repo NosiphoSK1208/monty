@@ -32,7 +32,7 @@ typedef struct stack_s
  * @lifo: is stack or queue
  * @cont: current line
  * @arg: second parameter inside the current line
- * @ahd: doubly linked list
+ * @head: doubly linked list
  * @fd: file descriptor
  * @buffer: input text
  *
@@ -44,7 +44,7 @@ typedef struct globals
 	int lifo;
 	unsigned int cont;
 	char  *arg;
-	stack_t *ahd;
+	stack_t *head;
 	FILE *fd;
 	char *buffer;
 } global_t;
